@@ -2,16 +2,16 @@ module "account_request_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = ""
-    AccountName               = ""
-    ManagedOrganizationalUnit = "" 
-    SSOUserEmail              = ""
-    SSOUserFirstName          = ""
-    SSOUserLastName           = ""
+    AccountEmail              = "thanasis.politis+ocre-class-1@pcg.io"
+    AccountName               = "Class Ocre 1"
+    ManagedOrganizationalUnit = "ProjectA"
+    SSOUserEmail              = "thanasis.politis@pcg.io"
+    SSOUserFirstName          = "Thanasis"
+    SSOUserLastName           = "Politis"
   }
 
   account_tags = {
-    "Project"     = "CustomerA"
+    "Project" = "CustomerA"
   }
 
   change_management_parameters = {
